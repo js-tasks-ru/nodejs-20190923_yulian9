@@ -1,0 +1,24 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        // enable additional rules
+        "linebreak-style": ["error", "windows"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "key-spacing": ["error", { "align": "value" }],
+
+        // override default options for rules from base configurations
+        "comma-dangle": ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+        "no-unused-vars": ["error", { "vars": "local" }],
+
+        // disable rules from base configurations
+        "no-console": "off",
+        "max-len": ["error", {"tabWidth": 4 }]
+        "code": 120,
+
+    "env": {
+        "es6": true,
+        "node": true,
+    }
+}
